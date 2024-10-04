@@ -58,7 +58,7 @@ To run this project, you will need:
 ### Software Installation
 
 1. **Vivado**: Download and install [Vivado Design Suite](https://www.xilinx.com/support/download.html) from the Xilinx website.
-2. **Assembler**: The assembler is provided as an executable. Alternatively, you can compile it from the provided source code using any standard C compiler.
+2. **Assembler**: The assembler is provided as an executable on Python.
 
 ## How to Run
 
