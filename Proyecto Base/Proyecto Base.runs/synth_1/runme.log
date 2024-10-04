@@ -1,0 +1,709 @@
+
+*** Running vivado
+    with args -log Basys3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Basys3.tcl -notrace
+Command: synth_design -top Basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5200 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 769.547 ; gain = 235.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basys3' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:17]
+INFO: [Synth 8-3491] module 'CPU' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:7' bound to instance 'inst_CPU' of component 'CPU' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'CPU' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:20]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/ALU.vhd:6' bound to instance 'inst_ALU' of component 'ALU' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/ALU.vhd:16]
+INFO: [Synth 8-3491] module 'Adder16' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:5' bound to instance 'inst_Adder16' of component 'Adder16' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/ALU.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'Adder16' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:13]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA0' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/HA.vhd:5' bound to instance 'inst_HA' of component 'HA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/HA.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'HA' (1#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/HA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/HA.vhd:5' bound to instance 'inst_HA2' of component 'HA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'FA' (2#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA1' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:35]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA2' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA3' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA4' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:59]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA5' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:67]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA6' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:75]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA7' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:83]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA8' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:91]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA9' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:99]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA10' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:107]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA11' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:115]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA12' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:123]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA13' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:131]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA14' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:139]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA15' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'Adder16' (3#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder16.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/ALU.vhd:16]
+INFO: [Synth 8-3491] module 'Status' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Status.vhd:4' bound to instance 'inst_Status' of component 'Status' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'Status' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Status.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Status' (5#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Status.vhd:14]
+INFO: [Synth 8-3491] module 'CU' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CU.vhd:4' bound to instance 'inst_CU' of component 'CU' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'CU' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CU.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'CU' (6#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CU.vhd:10]
+INFO: [Synth 8-3491] module 'MuxA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxA.vhd:4' bound to instance 'int_MuxA' of component 'MuxA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'MuxA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxA.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'MuxA' (7#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxA.vhd:11]
+INFO: [Synth 8-3491] module 'MuxB' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxB.vhd:5' bound to instance 'int_MuxB' of component 'MuxB' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'MuxB' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxB.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'MuxB' (8#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxB.vhd:13]
+INFO: [Synth 8-3491] module 'PC' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:5' bound to instance 'inst_PC' of component 'PC' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'PC' (9#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:15]
+INFO: [Synth 8-3491] module 'RegA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RegA.vhd:7' bound to instance 'inst_RegA' of component 'RegA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'RegA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RegA.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'RegA' (10#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RegA.vhd:17]
+INFO: [Synth 8-3491] module 'RegB' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RegB.vhd:7' bound to instance 'inst_RegB' of component 'RegB' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'RegB' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RegB.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'RegB' (11#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RegB.vhd:17]
+INFO: [Synth 8-3491] module 'Adder' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:4' bound to instance 'inst_Adder' of component 'Adder' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'Adder' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:11]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA0' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:26]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA1' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:34]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA2' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA3' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:50]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA4' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:58]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA5' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:66]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA6' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:74]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA7' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:82]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA8' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:90]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA9' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:98]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA10' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:106]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/FA.vhd:4' bound to instance 'inst_FA11' of component 'FA' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (12#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Adder.vhd:11]
+INFO: [Synth 8-3491] module 'MuxDataIn' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxDataIn.vhd:4' bound to instance 'inst_MuxDataIn' of component 'MuxDataIn' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'MuxDataIn' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxDataIn.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'MuxDataIn' (13#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxDataIn.vhd:11]
+INFO: [Synth 8-3491] module 'MuxPC' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxPC.vhd:4' bound to instance 'inst_MuxPC' of component 'MuxPC' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'MuxPC' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxPC.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'MuxPC' (14#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxPC.vhd:11]
+INFO: [Synth 8-3491] module 'MuxS' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxS.vhd:4' bound to instance 'inst_MuxS' of component 'MuxS' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'MuxS' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxS.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'MuxS' (15#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxS.vhd:12]
+INFO: [Synth 8-3491] module 'SP' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/SP.vhd:5' bound to instance 'inst_SP' of component 'SP' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'SP' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/SP.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'SP' (16#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/SP.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (17#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:20]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:6' bound to instance 'inst_ROM' of component 'ROM' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (18#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:17]
+INFO: [Synth 8-3491] module 'RAM' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:8' bound to instance 'inst_RAM' of component 'RAM' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (19#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:18]
+INFO: [Synth 8-3491] module 'Clock_Divider' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:7' bound to instance 'inst_Clock_Divider' of component 'Clock_Divider' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (20#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:13]
+INFO: [Synth 8-3491] module 'Display_Controller' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:7' bound to instance 'inst_Display_Controller' of component 'Display_Controller' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'Display_Controller' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Display_Controller' (21#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer0' of component 'Debouncer' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (22#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:14]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer1' of component 'Debouncer' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:194]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer2' of component 'Debouncer' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:195]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer3' of component 'Debouncer' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:196]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer4' of component 'Debouncer' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:197]
+INFO: [Synth 8-3491] module 'Programmer' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:6' bound to instance 'inst_Programmer' of component 'Programmer' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'Programmer' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:17]
+INFO: [Synth 8-3491] module 'UART' declared at 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:11' bound to instance 'inst_UART' of component 'UART' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:37]
+	Parameter DIVISOR bound to: 54 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UART' (23#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Programmer' (24#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:17]
+WARNING: [Synth 8-3848] Net led in module/entity Basys3 does not have driver. [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:8]
+INFO: [Synth 8-256] done synthesizing module 'Basys3' (25#1) [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:17]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[19]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[18]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[17]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[16]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[15]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[14]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[13]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[12]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[11]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[10]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[9]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[8]
+WARNING: [Synth 8-3331] design CU has unconnected port datain[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[0]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 843.875 ; gain = 309.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 843.875 ; gain = 309.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 843.875 ; gain = 309.402
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 843.875 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]
+Finished Parsing XDC File [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 945.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 945.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 945.367 ; gain = 410.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 945.367 ; gain = 410.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 945.367 ; gain = 410.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:26]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RegA.vhd:28]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/RegB.vhd:28]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/SP.vhd:24]
+WARNING: [Synth 8-327] inferring latch for variable 'mux_result_reg' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxA.vhd:20]
+WARNING: [Synth 8-327] inferring latch for variable 'mux_result_reg' [C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.srcs/sources_1/new/MuxS.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 945.367 ; gain = 410.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 61    
++---Registers : 
+	               36 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+	   4 Input     27 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 5     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 23    
+	  10 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+Module Status 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module MuxA 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module MuxB 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module RegA 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module RegB 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module MuxDataIn 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module MuxPC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module MuxS 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module SP 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+Module Clock_Divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     27 Bit        Muxes := 1     
+Module Display_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module Debouncer 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module Programmer 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[35]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[34]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[33]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[32]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[31]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[30]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[29]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[28]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[27]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[26]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[25]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[24]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[23]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[0]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[bits][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_Programmer/state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[fsm_state] )
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][8]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][7]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][7]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][6]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][6]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][5]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][5]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][4]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][4]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][3]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][3]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][2]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][2]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][1]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[nbits][3]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[nbits][0]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[nbits][2]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[nbits][0]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[nbits][0]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[nbits][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[nbits][1] )
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][1]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[bits][0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 945.367 ; gain = 410.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+---------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives       | 
++------------+---------------------+-----------+----------------------+------------------+
+|Basys3      | inst_ROM/memory_reg | Implied   | 4 K x 36             | RAM256X1S x 576	 | 
+|Basys3      | inst_RAM/memory_reg | Implied   | 4 K x 16             | RAM256X1S x 256	 | 
++------------+---------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 945.367 ; gain = 410.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 945.367 ; gain = 410.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+---------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives       | 
++------------+---------------------+-----------+----------------------+------------------+
+|Basys3      | inst_ROM/memory_reg | Implied   | 4 K x 36             | RAM256X1S x 576	 | 
+|Basys3      | inst_RAM/memory_reg | Implied   | 4 K x 16             | RAM256X1S x 256	 | 
++------------+---------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 963.191 ; gain = 428.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 968.461 ; gain = 433.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 968.461 ; gain = 433.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 968.461 ; gain = 433.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 968.461 ; gain = 433.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 968.461 ; gain = 433.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 968.461 ; gain = 433.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     4|
+|2     |CARRY4    |    30|
+|3     |LUT1      |     8|
+|4     |LUT2      |    67|
+|5     |LUT3      |   200|
+|6     |LUT4      |    32|
+|7     |LUT5      |    88|
+|8     |LUT6      |   330|
+|9     |MUXF7     |    74|
+|10    |MUXF8     |    25|
+|11    |RAM256X1S |   624|
+|12    |FDCE      |    15|
+|13    |FDPE      |    13|
+|14    |FDRE      |   181|
+|15    |LD        |    68|
+|16    |IBUF      |     2|
+|17    |OBUF      |    13|
+|18    |OBUFT     |    16|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |  1790|
+|2     |  inst_CPU                |CPU                |   213|
+|3     |    inst_MuxS             |MuxS               |    68|
+|4     |    inst_PC               |PC                 |    28|
+|5     |    inst_RegA             |RegA               |    28|
+|6     |    inst_RegB             |RegB               |    17|
+|7     |    inst_SP               |SP                 |    12|
+|8     |    inst_Status           |Status             |     4|
+|9     |    int_MuxA              |MuxA               |    56|
+|10    |  inst_Clock_Divider      |Clock_Divider      |    60|
+|11    |  inst_Display_Controller |Display_Controller |    33|
+|12    |  inst_Programmer         |Programmer         |   259|
+|13    |    inst_UART             |UART               |    57|
+|14    |  inst_RAM                |RAM                |   368|
+|15    |  inst_ROM                |ROM                |   822|
++------+--------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 968.461 ; gain = 433.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 47 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 968.461 ; gain = 332.496
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 968.461 ; gain = 433.988
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 968.461 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 821 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 974.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 692 instances were transformed.
+  LD => LDCE: 68 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 624 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+138 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 974.875 ; gain = 676.969
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 974.875 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/beatr/OneDrive - uc.cl/UC/2022/OCTAVO SEMESTRE/ARQUI/Proyecto Base/Proyecto Base/Proyecto Base.runs/synth_1/Basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Basys3_utilization_synth.rpt -pb Basys3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  3 14:25:27 2022...

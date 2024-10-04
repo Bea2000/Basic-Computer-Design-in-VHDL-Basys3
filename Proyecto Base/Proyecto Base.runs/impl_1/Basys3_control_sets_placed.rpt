@@ -1,0 +1,129 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Nov  3 14:26:43 2022
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Basys3_control_sets_placed.rpt
+| Design       : Basys3
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    51 |
+|    Minimum number of control sets                        |    51 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    51 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    51 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    40 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              90 |           43 |
+| No           | No                    | Yes                    |              16 |            6 |
+| No           | Yes                   | No                     |              44 |           12 |
+| Yes          | No                    | No                     |             102 |           34 |
+| Yes          | No                    | Yes                    |              12 |            3 |
+| Yes          | Yes                   | No                     |              13 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|      Clock Signal     |                  Enable Signal                 |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++-----------------------+------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  clock_BUFG           |                                                | inst_Programmer/bussy_sinc_reg_n_1                  |                1 |              1 |
+|  clk_IBUF_BUFG        | inst_Programmer/inst_UART/sample               | inst_Programmer/inst_UART/rx_state[bits][7]_i_1_n_1 |                1 |              4 |
+|  rx_state_reg[enable] | inst_Programmer/memory[1]_4                    |                                                     |                1 |              4 |
+|  rx_state_reg[enable] |                                                |                                                     |                3 |              6 |
+|  rx_state_reg[enable] | inst_Programmer/memory[3]_1                    |                                                     |                3 |              7 |
+|  rx_state_reg[enable] | inst_Programmer/memory[5]_3                    |                                                     |                3 |              8 |
+|  rx_state_reg[enable] | inst_Programmer/memory[0]_0                    |                                                     |                2 |              8 |
+|  rx_state_reg[enable] | inst_Programmer/memory[4]_2                    |                                                     |                2 |              8 |
+|  clk_IBUF_BUFG        | inst_Programmer/inst_UART/rx_state_next[nbits] | inst_Programmer/inst_UART/rx_state[bits][7]_i_1_n_1 |                4 |              9 |
+|  clock_BUFG           | inst_ROM/bussy_reg_4                           | inst_Programmer/clear                               |                3 |             12 |
+|  clock_BUFG           |                                                | inst_Programmer/clear                               |                5 |             15 |
+|  inst_ROM/E[0]        |                                                |                                                     |                7 |             16 |
+|  clk_IBUF_BUFG        |                                                |                                                     |                6 |             16 |
+|  clock_BUFG           | inst_ROM/load                                  |                                                     |                4 |             16 |
+|  clock_BUFG           | inst_ROM/bussy_reg_2                           |                                                     |                4 |             16 |
+|  clk_IBUF_BUFG        |                                                | inst_Display_Controller/clear                       |                5 |             17 |
+|  clk_IBUF_BUFG        |                                                | inst_Clock_Divider/clear                            |                7 |             27 |
+|  rx_state_reg[enable] | inst_Programmer/inst_UART/E[0]                 |                                                     |               15 |             35 |
+|  n_0_779_BUFG         |                                                |                                                     |               27 |             52 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[10]_0        |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[8]_0         |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[9]_0         |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[10]_1        |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[11]_0        |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[11]_3        |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/memory_reg_0_255_0_0_i_5_4  |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/memory_reg_0_255_0_0_i_5    |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/memory_reg_0_255_0_0_i_5_1  |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/memory_reg_0_255_0_0_i_5_2  |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/memory_reg_0_255_0_0_i_5_3  |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/memory_reg_0_255_0_0_i_5_0  |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[11]_1        |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[10]_2        |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[10]_3        |                                                     |               16 |             64 |
+|  clock_BUFG           | inst_CPU/inst_MuxS/mux_result_reg[11]_2        |                                                     |               16 |             64 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_13                   |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_7                    |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_0                    |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_14                   |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_8                    |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_1                    |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_3                    |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_5                    |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_6                    |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_15                   |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_2                    |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_11                   |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_4                    |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_12                   |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_10                   |                                                     |               23 |             92 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_9                    |                                                     |               23 |             92 |
++-----------------------+------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+
+

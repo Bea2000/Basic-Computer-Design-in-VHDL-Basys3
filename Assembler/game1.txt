@@ -1,0 +1,174 @@
+DATA:
+
+led  0
+sw   0
+dis  0
+btn  0
+sec  0
+msec 0
+usec 0
+lcd  0
+score_0 0
+score_1 0
+score_2 0
+score_3 0
+score_4 0
+mtime 0
+time 0
+
+CODE:
+
+clean:
+    MOV A,0
+    MOV B,0
+    MOV (led),A
+    MOV (dis),A
+
+// Se espera llamada de primer switch
+sw_wait:
+    CALL btn_wait_0
+    MOV A,1
+    CMP A,(sw) //se debe apretar primer switch
+    JEQ start_counter
+    JMP sw_wait
+
+// Mientras no parta el juego se espera apretada de boton
+btn_wait_0: //jugador 1
+    MOV A,1
+    CMP A,(btn)
+    JNE btn_wait_1
+    CALL show_dis_btn_0
+btn_wait_1: //jugador 2
+    MOV A,2
+    CMP A,(btn)
+    JNE btn_wait_2
+    CALL show_dis_btn_1
+btn_wait_2: //jugador 3
+    MOV A,4
+    CMP A,(btn)
+    JNE btn_wait_3
+    CALL show_dis_btn_2
+btn_wait_3: //jugador 4
+    MOV A,8
+    CMP A,(btn)
+    JNE btn_wait_4
+    CALL show_dis_btn_3
+btn_wait_4: //jugador 5
+    MOV A,16
+    CMP A,(btn)
+    JNE btn_wait_ret
+    CALL show_dis_btn_4
+btn_wait_ret: //Se vuelve a revisar si se apreto switch de inicio
+    RET
+
+show_dis_btn_0: //Si se apreto btn se muestra jugador 1
+    MOV A,1
+    MOV (dis),A
+    RET
+show_dis_btn_1: //Si se apreto btn se muestra jugador 2
+    MOV A,2
+    MOV (dis),A
+    RET
+show_dis_btn_2: //Si se apreto btn se muestra jugador 3
+    MOV A,3
+    MOV (dis),A
+    RET
+show_dis_btn_3: //Si se apreto btn se muestra jugador 4
+    MOV A,4
+    MOV (dis),A
+    RET
+show_dis_btn_4: //Si se apreto btn se muestra jugador 5
+    MOV A,5
+    MOV (dis),A
+    RET
+
+start_counter:
+MOV B,(sec)
+MOV (time),B //time = sec_inicial
+counter_down:
+    MOV A,(sec)
+    SUB B,(time) //B = A - (time)
+    MOV A,5 //A = 5
+    SUB A,B // A = A - B
+    MOV (dis),A
+    CMP A,0
+    JEQ btn_press
+    JMP counter_down
+
+end:
+    JMP end
+
+btn_press: //Se reinicia timer
+    MOV B,(msec)
+    MOV (mtime),B
+wait_btn_press: //Se espera apretada de boton
+    MOV A,(btn)
+    CMP A,0
+    JNE show_winner
+    JMP wait_btn_press
+
+show_winner: //Se verifica quien fue el ganador
+    MOV B,(msec)
+    CMP A,1
+    JEQ winner_0
+    CMP A,2
+    JEQ winner_1
+    CMP A,4
+    JEQ winner_2
+    CMP A,8
+    JEQ winner_3
+    CMP A,16
+    JEQ winner_4
+
+winner_0: //Caso ganador 1
+    MOV A,1
+    MOV (dis),A
+    MOV A,B
+    SUB A,(mtime)
+    MOV (led),A
+    INC (score_0)
+    JMP reset_game
+winner_1: //Caso ganador 2
+    MOV A,2
+    MOV (dis),A
+    MOV A,B
+    SUB A,(mtime)
+    MOV (led),A
+    INC (score_1)
+    JMP reset_game
+winner_2: //Caso ganador 3
+    MOV A,3
+    MOV (dis),A
+    MOV A,B
+    SUB A,(mtime)
+    MOV (led),A
+    INC (score_2)
+    JMP reset_game
+winner_3: //Caso ganador 4
+    MOV A,4
+    MOV (dis),A
+    MOV A,B
+    SUB A,(mtime)
+    MOV (led),A
+    INC (score_3)
+    JMP reset_game
+winner_4: //Caso ganador 5
+    MOV A,5
+    MOV (dis),A
+    MOV A,B
+    SUB A,(mtime)
+    MOV (led),A
+    INC (score_4)
+    JMP reset_game
+
+reset_game: //Se espera a que switch vuelva a estado original para partida nueva
+    MOV A,0
+    CMP A,(sw)
+    JEQ valid_reset
+    JMP reset_game
+
+valid_reset:
+    MOV A,0
+    MOV (led),A
+    MOV (dis),A
+    JMP sw_wait
