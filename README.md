@@ -41,9 +41,10 @@ In this stage, the focus was on adding I/O capabilities using memory-mapped devi
     - The LCD was connected to the Basys3 board via the Pmod Header JB and JC ports. The LCD data bus is 11 bits wide, with the most significant bit used for load control and the other 10 bits for data.
 
 **Game**:
+
   **Reaction Game**: A game to test players' reaction times. After a countdown on the display, the first player to press their button is shown as the winner on the 7-segment display, and their reaction time is displayed on the LEDs.
 
-    This game was written in assembly and loaded onto the ROM using the assembler. Input was handled through the Basys3 switches and buttons, while output was displayed on the LEDs and 7-segment displays.
+This game was written in assembly and loaded onto the ROM using the assembler. Input was handled through the Basys3 switches and buttons, while output was displayed on the LEDs and 7-segment displays.
 
 ## Requirements
 
